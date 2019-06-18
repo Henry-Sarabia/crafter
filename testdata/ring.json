@@ -1,0 +1,52 @@
+{
+  "name": "ring",
+  "base_value": 3,
+  "base_weight": 0.01,
+  "components": [
+    {
+      "name": "band",
+      "required": true,
+      "properties": [
+        {
+          "name": "material",
+          "types": [
+            "base metal",
+            "precious metal",
+            "wood",
+            "ivory"
+          ]
+        },
+        {
+          "name": "engraving",
+          "types": [
+            "power word",
+            "phrase",
+            "symbol"
+          ],
+          "type_groups": [
+            "language"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ornament",
+      "required": false,
+      "properties": [
+        {
+          "name": "stone",
+          "types": [
+            "gem"
+          ]
+        },
+        {
+          "name": "insignia",
+          "types": [
+            "letter",
+            "symbol"
+          ]
+        }
+      ]
+    }
+  ]
+}
