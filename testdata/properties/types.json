@@ -1,0 +1,152 @@
+[
+  {
+    "name": "gemstone",
+    "minor_value_factor": 1.5,
+    "minor_value_details":[
+      "amber",
+      "bloodstone",
+      "jet",
+      "moonstone",
+      "obsidian",
+      "onyx",
+      "sunstone",
+      "zircon"
+    ],
+    "avg_value_factor": 1.75,
+    "avg_value_details":[
+      "agate",
+      "alexandrite",
+      "amazonite",
+      "azurite",
+      "citrine",
+      "garnets",
+      "jade",
+      "lapis lazuli",
+      "malachite",
+      "opalite",
+      "pearl",
+      "peridot",
+      "quartz",
+      "rose quartz",
+      "serpentine",
+      "tiger eye",
+      "topazes",
+      "tourmaline",
+      "turquois"
+    ],
+    "major_value_factor": 2,
+    "major_value_details":[
+      "amethyst",
+      "aquamarine",
+      "diamond",
+      "emerald",
+      "ruby",
+      "sapphire"
+    ]
+  },
+  {
+    "name": "letter",
+    "minor_value_factor": 1.5,
+    "minor_value_details":[
+      "A",
+      "B",
+      "C"
+    ],
+    "avg_value_factor": 1.75,
+    "avg_value_details":[
+      "D",
+      "E",
+      "F"
+    ],
+    "major_value_factor": 2,
+    "major_value_details":[
+      "X",
+      "Y",
+      "Z"
+    ]
+  },
+  {
+    "name": "power word",
+    "minor_value_factor": 1.5,
+    "minor_value_details":[
+      "minor power word 1",
+      "minor power word 2",
+      "minor power word 3"
+    ],
+    "avg_value_factor": 1.75,
+    "avg_value_details":[
+      "avg power word 1",
+      "avg power word 2",
+      "avg power word 3"
+    ],
+    "major_value_factor": 2,
+    "major_value_details":[
+      "major power word 1",
+      "major power word 2",
+      "major power word 3"
+    ]
+  },
+  {
+    "name": "symbol",
+    "minor_value_factor": 1.5,
+    "minor_value_details":[
+      "minor symbol 1",
+      "minor symbol 2",
+      "minor symbol 3"
+    ],
+    "avg_value_factor": 1.75,
+    "avg_value_details":[
+      "avg symbol 1",
+      "avg symbol 2",
+      "avg symbol 3"
+    ],
+    "major_value_factor": 2,
+    "major_value_details":[
+      "major symbol 1",
+      "major symbol 2",
+      "major symbol 3"
+    ]
+  },
+  {
+    "name": "orcish",
+    "minor_value_factor": 1.5,
+    "minor_value_details":[
+      "minor orcish 1",
+      "minor orcish 2",
+      "minor orcish 3"
+    ],
+    "avg_value_factor": 1.75,
+    "avg_value_details":[
+      "avg orcish 1",
+      "avg orcish 2",
+      "avg orcish 3"
+    ],
+    "major_value_factor": 2,
+    "major_value_details":[
+      "major orcish 1",
+      "major orcish 2",
+      "major orcish 3"
+    ]
+  },
+  {
+    "name": "elvish",
+    "minor_value_factor": 1.5,
+    "minor_value_details":[
+      "minor elvish 1",
+      "minor elvish 2",
+      "minor elvish 3"
+    ],
+    "avg_value_factor": 1.75,
+    "avg_value_details":[
+      "avg elvish 1",
+      "avg elvish 2",
+      "avg elvish 3"
+    ],
+    "major_value_factor": 2,
+    "major_value_details":[
+      "major elvish 1",
+      "major elvish 2",
+      "major elvish 3"
+    ]
+  }
+]

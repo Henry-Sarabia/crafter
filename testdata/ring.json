@@ -20,7 +20,6 @@
           "name": "engraving",
           "types": [
             "power word",
-            "phrase",
             "symbol"
           ],
           "type_groups": [
@@ -36,7 +35,7 @@
         {
           "name": "stone",
           "types": [
-            "gem"
+            "gemstone"
           ]
         },
         {
