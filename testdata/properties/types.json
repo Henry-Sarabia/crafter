@@ -2,7 +2,7 @@
   {
     "name": "gemstone",
     "minor_value_factor": 1.5,
-    "minor_value_details":[
+    "minor_value_variants":[
       "amber",
       "bloodstone",
       "jet",
@@ -13,7 +13,7 @@
       "zircon"
     ],
     "avg_value_factor": 1.75,
-    "avg_value_details":[
+    "avg_value_variants":[
       "agate",
       "alexandrite",
       "amazonite",
@@ -35,7 +35,7 @@
       "turquois"
     ],
     "major_value_factor": 2,
-    "major_value_details":[
+    "major_value_variants":[
       "amethyst",
       "aquamarine",
       "diamond",
@@ -47,19 +47,19 @@
   {
     "name": "letter",
     "minor_value_factor": 1.5,
-    "minor_value_details":[
+    "minor_value_variants":[
       "A",
       "B",
       "C"
     ],
     "avg_value_factor": 1.75,
-    "avg_value_details":[
+    "avg_value_variants":[
       "D",
       "E",
       "F"
     ],
     "major_value_factor": 2,
-    "major_value_details":[
+    "major_value_variants":[
       "X",
       "Y",
       "Z"
@@ -68,19 +68,19 @@
   {
     "name": "power word",
     "minor_value_factor": 1.5,
-    "minor_value_details":[
+    "minor_value_variants":[
       "minor power word 1",
       "minor power word 2",
       "minor power word 3"
     ],
     "avg_value_factor": 1.75,
-    "avg_value_details":[
+    "avg_value_variants":[
       "avg power word 1",
       "avg power word 2",
       "avg power word 3"
     ],
     "major_value_factor": 2,
-    "major_value_details":[
+    "major_value_variants":[
       "major power word 1",
       "major power word 2",
       "major power word 3"
@@ -89,19 +89,19 @@
   {
     "name": "symbol",
     "minor_value_factor": 1.5,
-    "minor_value_details":[
+    "minor_value_variants":[
       "minor symbol 1",
       "minor symbol 2",
       "minor symbol 3"
     ],
     "avg_value_factor": 1.75,
-    "avg_value_details":[
+    "avg_value_variants":[
       "avg symbol 1",
       "avg symbol 2",
       "avg symbol 3"
     ],
     "major_value_factor": 2,
-    "major_value_details":[
+    "major_value_variants":[
       "major symbol 1",
       "major symbol 2",
       "major symbol 3"
@@ -110,19 +110,19 @@
   {
     "name": "orcish",
     "minor_value_factor": 1.5,
-    "minor_value_details":[
+    "minor_value_variants":[
       "minor orcish 1",
       "minor orcish 2",
       "minor orcish 3"
     ],
     "avg_value_factor": 1.75,
-    "avg_value_details":[
+    "avg_value_variants":[
       "avg orcish 1",
       "avg orcish 2",
       "avg orcish 3"
     ],
     "major_value_factor": 2,
-    "major_value_details":[
+    "major_value_variants":[
       "major orcish 1",
       "major orcish 2",
       "major orcish 3"
@@ -131,22 +131,54 @@
   {
     "name": "elvish",
     "minor_value_factor": 1.5,
-    "minor_value_details":[
+    "minor_value_variants":[
       "minor elvish 1",
       "minor elvish 2",
       "minor elvish 3"
     ],
     "avg_value_factor": 1.75,
-    "avg_value_details":[
+    "avg_value_variants":[
       "avg elvish 1",
       "avg elvish 2",
       "avg elvish 3"
     ],
     "major_value_factor": 2,
-    "major_value_details":[
+    "major_value_variants":[
       "major elvish 1",
       "major elvish 2",
       "major elvish 3"
+    ]
+  },
+  {
+    "name": "geometric",
+    "minor_value_factor": 1.5,
+    "minor_value_variants":[
+      "square"
+    ],
+    "avg_value_factor": 1.75,
+    "avg_value_variants":[
+      "rectangle"
+    ],
+    "major_value_factor": 2,
+    "major_value_variants":[
+      "circle",
+      "triangle"
+    ]
+  },
+  {
+    "name": "geometric3",
+    "minor_value_factor": 1.5,
+    "minor_value_variants":[
+      "cube"
+    ],
+    "avg_value_factor": 1.75,
+    "avg_value_variants":[
+      "rectangular prism"
+    ],
+    "major_value_factor": 2,
+    "major_value_variants":[
+      "sphere",
+      "pyramid"
     ]
   }
 ]
