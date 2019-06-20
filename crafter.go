@@ -40,6 +40,7 @@ type property struct {
 	TypeGroupRefs []string `json:"type_groups"`
 	Types         []*propType
 	TypeGroups    []*propTypeGroup
+	// type groups? or concat to Types
 }
 
 // propType is a specific type of property. For example, the material property
@@ -146,6 +147,15 @@ func (c *crafter) linkRecipes() error {
 
 					comp.Props[i].Types = append(comp.Props[i].Types, t)
 				}
+
+				for _, ref := range comp.Props[i].TypeGroupRefs {
+					t, err := c.findGroup(ref)
+					if err != nil {
+						return err
+					}
+
+					comp.Props[i].TypeGroups = append(comp.Props[i].TypeGroups, t)
+				}
 			}
 		}
 	}
@@ -156,12 +166,23 @@ func (c *crafter) linkRecipes() error {
 func (c *crafter) find(s string) (*propType, error) {
 	for i := range c.Types {
 		if c.Types[i].Name == s {
-			fmt.Println("found! ", c.Types[i].Name)
+			fmt.Println("found type! ", c.Types[i].Name)
 			return &c.Types[i], nil
 		}
 	}
 
 	return nil, errors.Errorf("cannot find propType '%s' in memory", s)
+}
+
+func (c *crafter) findGroup(s string) (*propTypeGroup, error) {
+	for i := range c.Groups {
+		if c.Groups[i].Name == s {
+			fmt.Println("found typeGroup!" , c.Groups[i].Name)
+			return &c.Groups[i], nil
+		}
+	}
+
+	return nil, errors.Errorf("cannot find propTypeGroup '%s' in memory", s)
 }
 
 func loadRecipes() ([]recipe, error) {
@@ -192,7 +213,7 @@ func loadRecipes() ([]recipe, error) {
 // loadGroups reads the propTypeGroups JSON file and returns the data as a
 // slice of propTypeGroups.
 func loadGroups() ([]propTypeGroup, error) {
-	f, err := ioutil.ReadFile("testdata/properties/groups.json")
+	f, err := ioutil.ReadFile("testdata/properties/typegroups.json")
 	if err != nil {
 		return nil, err
 	}

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "language",
+    "types": [
+      "orcish",
+      "elvish"
+    ]
+  },
+  {
+    "name": "object",
+    "types": [
+      "humanoid",
+      "monstrosity"
+    ]
+  }
+]

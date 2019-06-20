@@ -180,5 +180,75 @@
       "sphere",
       "pyramid"
     ]
+  },
+  {
+    "name": "humanoid",
+    "avg_value_factor": 1.2,
+    "avg_value_variants":[
+      "dragonborn",
+      "dwarf",
+      "elf",
+      "gnome",
+      "goblin",
+      "halfling",
+      "half-orc",
+      "hobgoblin",
+      "human",
+      "kenku",
+      "kobold",
+      "orc",
+      "tabaxi",
+      "tiefling",
+      "yuan-ti"
+    ],
+    "major_value_factor": 1.4,
+    "major_value_variants":[
+      "aarakocra",
+      "firbolg",
+      "goliath",
+      "lizardfolk",
+      "minotaur",
+      "tortle",
+      "triton",
+      "warforged"
+    ]
+  },
+  {
+    "name": "monstrosity",
+    "minor_value_factor": 1.25,
+    "minor_value_variants":[
+      "death dog",
+      "cockatrice",
+      "harpy",
+      "owlbear",
+      "roc",
+      "worg"
+    ],
+    "avg_value_factor": 1.5,
+    "avg_value_variants":[
+      "bulette",
+      "centaur",
+      "chimera",
+      "drider",
+      "ettercap",
+      "hippogriff",
+      "hydra",
+      "manticore",
+      "merrow",
+      "minotaur",
+      "naga",
+      "phase spider",
+      "rust monster"
+    ],
+    "major_value_factor": 1.75,
+    "major_value_variants":[
+      "androsphinx",
+      "basilisk",
+      "gorgon",
+      "griffon",
+      "gynosphinx",
+      "kraken",
+      "medusa"
+    ]
   }
 ]
