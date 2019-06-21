@@ -110,21 +110,6 @@ func New() (*crafter, error) {
 	return c, nil
 }
 
-//func (c *crafter) linkGroups() error {
-//	for i := range c.Groups {
-//		for _, ref := range c.Groups[i].TypeRefs {
-//			t, err := c.find(ref)
-//			if err != nil {
-//				return err
-//			}
-//
-//			c.Groups[i].Types = append(c.Groups[i].Types, t)
-//		}
-//	}
-//
-//	return nil
-//}
-
 // linkGroups iterates through every group's TypeRefs and adds the
 // corresponding propType addresses to the group's Types slice.
 func (c *crafter) linkGroups() error {
@@ -170,56 +155,6 @@ func (c *crafter) linkRecipes() error {
 
 	return nil
 }
-
-//func (c *crafter) linkRecipes() error {
-//	for _, r := range c.Recipes {
-//		for _, comp := range r.Comps {
-//			for i := range comp.Props {
-//				for _, ref := range comp.Props[i].TypeRefs {
-//					t, err := c.find(ref)
-//					if err != nil {
-//						return err
-//					}
-//
-//					comp.Props[i].Types = append(comp.Props[i].Types, t)
-//				}
-//
-//				for _, ref := range comp.Props[i].TypeGroupRefs {
-//					t, err := c.findGroup(ref)
-//					if err != nil {
-//						return err
-//					}
-//
-//					comp.Props[i].TypeGroups = append(comp.Props[i].TypeGroups, t)
-//				}
-//			}
-//		}
-//	}
-//
-//	return nil
-//}
-
-//func (c *crafter) find(s string) (*propType, error) {
-//	for i := range c.Types {
-//		if c.Types[i].Name == s {
-//			fmt.Println("found type! ", c.Types[i].Name)
-//			return &c.Types[i], nil
-//		}
-//	}
-//
-//	return nil, errors.Errorf("cannot find propType '%s' in memory", s)
-//}
-//
-//func (c *crafter) findGroup(s string) (*propTypeGroup, error) {
-//	for i := range c.Groups {
-//		if c.Groups[i].Name == s {
-//			fmt.Println("found typeGroup!" , c.Groups[i].Name)
-//			return &c.Groups[i], nil
-//		}
-//	}
-//
-//	return nil, errors.Errorf("cannot find propTypeGroup '%s' in memory", s)
-//}
 
 // loadRecipeDir loads the recipes from the given directory. The directory path
 // should not include a trailing slash. Each JSON file should contain an array of
