@@ -15,7 +15,7 @@ func TestNew(t *testing.T) {
 	spew.Dump(c)
 }
 
-func TestLoadRecipes(t *testing.T) {
+func TestLoadRecipeDir(t *testing.T) {
 	r, err := loadRecipeDir(recipeDirPath)
 	if err != nil {
 		t.Fatal(err)
@@ -24,7 +24,7 @@ func TestLoadRecipes(t *testing.T) {
 	spew.Dump(r)
 }
 
-func TestLoadGroups(t *testing.T) {
+func TestLoadGroupDir(t *testing.T) {
 	g, err := loadGroupDir(groupDirPath)
 	if err != nil {
 		t.Fatal(err)
@@ -35,7 +35,7 @@ func TestLoadGroups(t *testing.T) {
 	}
 }
 
-func TestLoadTypes(t *testing.T) {
+func TestLoadTypeDir(t *testing.T) {
 	tp, err := loadTypeDir(typeDirPath)
 	if err != nil {
 		t.Fatal(err)

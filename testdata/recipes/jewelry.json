@@ -10,7 +10,7 @@
         "properties": [
           {
             "name": "material",
-            "types": [
+            "type_refs": [
               "base metal",
               "precious metal",
               "wood",
@@ -19,11 +19,11 @@
           },
           {
             "name": "engraving",
-            "types": [
+            "type_refs": [
               "power word",
               "symbol"
             ],
-            "type_groups": [
+            "type_group_refs": [
               "language"
             ]
           }
@@ -35,13 +35,13 @@
         "properties": [
           {
             "name": "stone",
-            "types": [
+            "type_refs": [
               "gemstone"
             ]
           },
           {
             "name": "insignia",
-            "types": [
+            "type_refs": [
               "letter",
               "symbol"
             ]

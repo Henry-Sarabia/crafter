@@ -1,14 +1,14 @@
 [
   {
     "name": "language",
-    "types": [
+    "type_refs": [
       "orcish",
       "elvish"
     ]
   },
   {
     "name": "object",
-    "types": [
+    "type_refs": [
       "humanoid",
       "monstrosity"
     ]

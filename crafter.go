@@ -41,8 +41,8 @@ type component struct {
 type property struct {
 	Name          string   `json:"name"`
 	Required      bool     `json:"required"`
-	TypeRefs      []string `json:"types"`
-	TypeGroupRefs []string `json:"type_groups"`
+	TypeRefs      []string `json:"type_refs"`
+	TypeGroupRefs []string `json:"type_group_refs"`
 	Types         []*propType
 	TypeGroups    []*propTypeGroup
 }
@@ -68,7 +68,7 @@ type propType struct {
 // contain every type of weapon.
 type propTypeGroup struct {
 	Name     string   `json:"name"`
-	TypeRefs []string `json:"types"`
+	TypeRefs []string `json:"type_refs"`
 	Types    []*propType
 }
 
@@ -127,7 +127,8 @@ func (c *crafter) linkGroups() error {
 	return nil
 }
 
-// linkRecipes
+// linkRecipes links every recipe's typeRefs and typeGroupRefs to their
+// respective propTypes and propTypeGroups.
 func (c *crafter) linkRecipes() error {
 	for _, rec := range c.Recipes {
 		for _, comp := range rec.Comps {
