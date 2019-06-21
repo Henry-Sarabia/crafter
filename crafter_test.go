@@ -1,10 +1,8 @@
 package crafter
 
 import (
-	"encoding/json"
 	"fmt"
 	"github.com/davecgh/go-spew/spew"
-	"io/ioutil"
 	"testing"
 )
 
@@ -18,7 +16,7 @@ func TestNew(t *testing.T) {
 }
 
 func TestLoadRecipes(t *testing.T) {
-	r, err := loadRecipes()
+	r, err := loadRecipeDir(recipeDirPath)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -26,36 +24,8 @@ func TestLoadRecipes(t *testing.T) {
 	spew.Dump(r)
 }
 
-func TestRecipe(t *testing.T) {
-	f, err := ioutil.ReadFile("testdata/ring.json")
-	if err != nil {
-		t.Fatal(err)
-	}
-
-	var r recipe
-	if err := json.Unmarshal(f, &r); err != nil {
-		t.Fatal(err)
-	}
-
-	fmt.Println(r)
-}
-
-func TestPropType(t *testing.T) {
-	f, err := ioutil.ReadFile("testdata/wood.json")
-	if err != nil {
-		t.Fatal(err)
-	}
-
-	var p propType
-	if err := json.Unmarshal(f, &p); err != nil {
-		t.Fatal(err)
-	}
-
-	fmt.Println(p)
-}
-
 func TestLoadGroups(t *testing.T) {
-	g, err := loadGroups()
+	g, err := loadGroupDir(groupDirPath)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -65,19 +35,8 @@ func TestLoadGroups(t *testing.T) {
 	}
 }
 
-func TestLoadMaterials(t *testing.T) {
-	m, err := loadMaterials()
-	if err != nil {
-		t.Fatal(err)
-	}
-
-	for _, v := range m {
-		fmt.Println(v)
-	}
-}
-
 func TestLoadTypes(t *testing.T) {
-	tp, err := loadTypes()
+	tp, err := loadTypeDir(typeDirPath)
 	if err != nil {
 		t.Fatal(err)
 	}
