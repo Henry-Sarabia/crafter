@@ -1,0 +1,306 @@
+[
+  {
+    "name": "wood",
+    "weight_factor": 3,
+    "minor_value_factor": 1,
+    "minor_value_variants":[
+      "corkwood"
+    ],
+    "avg_value_factor": 1.5,
+    "avg_value_variants":[
+      "ash wood",
+      "bamboo wood",
+      "birch wood",
+      "cedar wood",
+      "cherry wood",
+      "elm wood",
+      "fir wood",
+      "maple wood",
+      "oak wood",
+      "pine wood",
+      "spruce wood",
+      "walnut wood"
+    ],
+    "major_value_factor": 2,
+    "major_value_variants":[
+      "eucalyptus wood",
+      "rosewood",
+      "mahogany wood",
+      "ironwood",
+      "sandalwood"
+    ],
+    "prefix_references":[
+      "wear",
+      "organic",
+      "clean",
+      "varnish"
+    ]
+  },
+  {
+    "name": "base metal",
+    "weight_factor": 10,
+    "minor_value_factor": 6,
+    "minor_value_variants":[
+      "black iron",
+      "pig iron",
+      "cast iron",
+      "lead"
+    ],
+    "avg_value_factor": 7,
+    "avg_value_variants":[
+      "copper",
+      "brass",
+      "tin"
+    ],
+    "major_value_factor": 8,
+    "major_value_variants":[
+      "bronze",
+      "steel"
+    ],
+    "prefix_references":[
+      "wear",
+      "metal",
+      "polish"
+    ]
+  },
+  {
+    "name": "precious metal",
+    "weight_factor": 8,
+    "minor_value_factor": 11,
+    "minor_value_variants":[
+      "copper",
+      "electrum",
+      "silver"
+    ],
+    "avg_value_factor": 12,
+    "avg_value_variants":[
+      "gold",
+      "rose gold",
+      "white gold"
+    ],
+    "major_value_factor": 13,
+    "major_value_variants":[
+      "platinum"
+    ],
+    "prefix_references":[
+      "wear",
+      "metal",
+      "polish"
+    ]
+  },
+  {
+    "name": "stone",
+    "weight_factor": 9,
+    "minor_value_factor": 2,
+    "minor_value_variants":[
+      "basalt",
+      "slate",
+      "diorite"
+    ],
+    "avg_value_factor": 3,
+    "avg_value_variants":[
+      "granite",
+      "alabaster",
+      "sandstone",
+      "limestone",
+      "soapstone"
+    ],
+    "major_value_factor": 4,
+    "major_value_variants":[
+      "marble",
+      "quartz",
+      "quartzite",
+      "serpentinite",
+      "obsidian",
+      "onyx"
+    ],
+    "prefix_references":[
+      "wear",
+      "composite",
+      "polish"
+    ]
+  },
+  {
+    "name": "cloth",
+    "weight_factor": 1,
+    "minor_value_factor": 1.5,
+    "minor_value_variants":[
+      "hempen cloth"
+    ],
+    "avg_value_factor": 2,
+    "avg_value_variants":[
+      "cotton",
+      "linen",
+      "wool",
+      "felt cloth",
+      "flannel cloth"
+    ],
+    "major_value_factor": 3,
+    "major_value_variants":[
+      "cashmere",
+      "ramie cloth",
+      "silk"
+    ],
+    "prefix_references":[
+      "wear",
+      "textile",
+      "organic",
+      "clean"
+    ]
+  },
+  {
+    "name": "gem",
+    "weight_factor": 5,
+    "minor_value_factor": 14,
+    "minor_value_variants":[
+      "amber",
+      "bloodstone",
+      "jet",
+      "moonstone",
+      "obsidian",
+      "onyx",
+      "sunstone",
+      "zircon"
+    ],
+    "avg_value_factor": 15,
+    "avg_value_variants":[
+      "agate",
+      "alexandrite",
+      "amazonite",
+      "azurite",
+      "citrine",
+      "garnet",
+      "jade",
+      "lapis lazuli",
+      "malachite",
+      "opalite",
+      "pearl",
+      "peridot",
+      "quartz",
+      "rose quartz",
+      "serpentine",
+      "tiger eye",
+      "topaz",
+      "tourmaline",
+      "turquoise"
+    ],
+    "major_value_factor": 16,
+    "major_value_variants":[
+      "amethyst",
+      "aquamarine",
+      "diamond",
+      "emerald",
+      "ruby",
+      "sapphire"
+    ],
+    "prefix_references":[
+      "wear",
+      "ceramic",
+      "composite",
+      "polish"
+    ]
+  },
+  {
+    "name": "leather",
+    "weight_factor": 2,
+    "minor_value_factor": 2,
+    "minor_value_variants":[
+      "calf leather"
+    ],
+    "avg_value_factor": 3,
+    "avg_value_variants":[
+      "deer leather",
+      "buffalo leather"
+    ],
+    "major_value_factor": 4,
+    "major_value_variants":[
+      "alligator leather",
+      "crocodile leather",
+      "stingray leather",
+      "shark leather"
+    ],
+    "prefix_references":[
+      "wear",
+      "organic",
+      "textile",
+      "clean",
+      "condition"
+    ]
+  },
+  {
+    "name": "animal skin",
+    "weight_factor": 2,
+    "minor_value_factor": 2,
+    "minor_value_variants":[
+      "pig skin",
+      "calfskin"
+    ],
+    "avg_value_factor": 3,
+    "avg_value_variants":[
+      "deerskin",
+      "lamb skin"
+    ],
+    "major_value_factor": 4,
+    "major_value_variants":[
+      "snake skin",
+      "elk skin",
+      "buckskin"
+    ],
+    "prefix_references":[
+      "wear",
+      "organic",
+      "textile",
+      "clean",
+      "condition"
+    ]
+  },
+  {
+    "name": "ivory",
+    "weight_factor": 3,
+    "minor_value_factor": 8,
+    "minor_value_variants":[
+      "boar ivory"
+    ],
+    "avg_value_factor": 9,
+    "avg_value_variants":[
+      "elephant ivory",
+      "walrus ivory",
+      "hippopotamus ivory",
+      "orc ivory"
+    ],
+    "major_value_factor": 10,
+    "major_value_variants":[
+      "narwhal ivory",
+      "mammoth ivory"
+    ],
+    "prefix_references":[
+      "wear",
+      "organic",
+      "composite",
+      "ceramic",
+      "clean",
+      "polish"
+    ]
+  },
+  {
+    "name": "bone",
+    "weight_factor": 2,
+    "avg_value_factor": 4,
+    "avg_value_variants":[
+      "bone",
+      "animal bone"
+    ],
+    "major_value_factor": 5,
+    "major_value_variants":[
+      "humanoid bone"
+    ],
+    "prefix_references":[
+      "wear",
+      "organic",
+      "composite",
+      "ceramic",
+      "clean",
+      "polish"
+    ]
+  }
+]

@@ -1,36 +1,47 @@
 package crafter
 
 import (
-	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"github.com/davecgh/go-spew/spew"
 	"testing"
 )
 
-func TestRecipe(t *testing.T) {
-	f, err := ioutil.ReadFile("testdata/ring.json")
+func TestNew(t *testing.T) {
+	c, err := New()
 	if err != nil {
 		t.Fatal(err)
 	}
 
-	var r recipe
-	if err := json.Unmarshal(f, &r); err != nil {
-		t.Fatal(err)
-	}
-
-	fmt.Println(r)
+	spew.Dump(c)
 }
 
-func TestPropType(t *testing.T) {
-	f, err := ioutil.ReadFile("testdata/wood.json")
+func TestLoadRecipeDir(t *testing.T) {
+	r, err := loadRecipeDir(recipeDirPath)
 	if err != nil {
 		t.Fatal(err)
 	}
 
-	var p propType
-	if err := json.Unmarshal(f, &p); err != nil {
+	spew.Dump(r)
+}
+
+func TestLoadGroupDir(t *testing.T) {
+	g, err := loadGroupDir(groupDirPath)
+	if err != nil {
 		t.Fatal(err)
 	}
 
-	fmt.Println(p)
+	for _, v := range g {
+		fmt.Println(v)
+	}
+}
+
+func TestLoadTypeDir(t *testing.T) {
+	tp, err := loadTypeDir(typeDirPath)
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	for _, v := range tp {
+		fmt.Println(v)
+	}
 }

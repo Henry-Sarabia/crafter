@@ -1,0 +1,16 @@
+[
+  {
+    "name": "language",
+    "type_refs": [
+      "orcish",
+      "elvish"
+    ]
+  },
+  {
+    "name": "object",
+    "type_refs": [
+      "humanoid",
+      "monstrosity"
+    ]
+  }
+]
